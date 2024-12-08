@@ -16,6 +16,217 @@
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
 
 
+
+    <style>
+
+        /* about page code */
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,500|Roboto:400,700');
+
+$white: #fff;
+$gray: #a5a5a5;
+$black: #322c2c;
+$text: #8e8e8e;
+
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: $text;
+  background: $white;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3 {
+  font-family: 'EB Garamond', serif;
+  color: $black;
+  line-height: 1.1;
+}
+
+h2, h3 {
+  color: $black;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.325rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0 0 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin: 0 0 2rem;
+}
+
+p {
+  margin: 0 0 1.5rem;
+  &:nth-child(4) {
+    margin: 0;
+  }
+  &.copyright {
+    margin: 1.5rem 0;
+  }
+}
+
+a {
+  color: $gray;
+  text-decoration: none;
+  &:hover {
+    color: $black;
+  }
+}
+
+blockquote {
+  font-style: italic;
+  text-align: center;
+  width: 40rem;
+  height: auto;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0 1.5rem 0 0;
+  }
+}
+
+.intro {
+  margin: 1rem 0;
+  padding: 0;
+  width: 100%;
+}
+
+nav {
+  position: relative;
+  padding: 1.25rem 0 1.25rem 0;
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    li {
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.125rem;
+      text-transform: uppercase;
+      margin: 0 1.5rem 0 0;
+      &:nth-child(3) {
+        margin: 0;
+      }
+    }
+  }
+}
+
+nav .grid {
+  > [class*="column-"] {
+    padding: 0.25rem 1rem;
+  }
+}
+
+#logo {
+  color: $black;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+  padding: 0 1rem;
+  max-width: 75rem;
+  width: 100%;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+.grid {
+  > [class*="column-"] {
+    padding: 1rem;
+  }
+}
+
+.section-heading {
+  transform: rotate(0) translateX(0);
+}
+
+img {
+	width: 100%;
+  height: 100%;
+	object-fit: cover;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (min-width: $md) {
+  body {
+    font-size: 1.125rem;
+  }
+  
+  nav {
+    padding: 2.5rem 0 2.5rem 0;
+    ul {
+      justify-content: flex-end;
+    }
+  }
+  
+  h1 {
+    font-size: 3.25rem;
+  }
+  
+  h2 {
+    font-size: 2.75rem;
+  }
+
+  h3 {
+    font-size: 2.25rem;
+  }
+  
+  img {
+    height: 40rem;
+  }
+  
+  .section-heading {
+    position: absolute;
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-100%);
+  }
+  
+  .intro {
+    padding: 1rem;
+  }
+  
+  blockquote {
+    width: 30rem;
+    height: 40rem;
+  }
+}
+    </style>
     <style>
         @font-face{
             font-family: "Watokelay";
@@ -246,20 +457,21 @@
 <body>
 
     <!-- start nav  -->
-    <nav class="navbar-1 sticky-top  container">
-     <!-- <nav class=""> -->
+     <nav class=" container">
 
-    <div class="main" >
+    <div class="main">
         <div class="navbar">
             <div class="icon">
                 <h2 class="logo">Apple MakeUp Class</h2>
             </div>
             
 
-            <div class="menu">
+            <div class="menu center">
+                <br>
                 
                  <ul>
                     <li><a href="index.html">HOME</a></li>
+                    <li></li>
                     <!-- copy yya -->
                     <li class="dropdown dropbtn"> 
                         <!-- <a href="#about">Courses</a> -->
@@ -278,15 +490,23 @@
                               <a href="prohair.html">Pro Hairstyling</a>
                             </div>
                         </li>
+                        <li></li>
+                        <li></li>
 
                     <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="services.html">SERVICE</a></li>
+                    <li></li>
+                    <li></li>
                     <!-- <li><a href="#">DESIGN</a></li> -->
+                    <li><a href="services.html">SERVICES</a></li>
+
+                    <li></li>
+                    <li></li>
                     <li><a href="contact.html">CONTACT</a></li>
+
                 </ul> 
             </div>
 
-            <div class="search">
+            <div class="search center">
                 <input class="srch" type="search" name="" placeholder="Type To text">
                 <a href="#"> <button class="btn">Search</button></a>
             </div>
@@ -294,17 +514,10 @@
         </div> 
    
         <div class="content">
-            <h1 class="h1-1">Hair Styling & <br><span>MakeUp</span> <br>Training Course</h1>
-            <p class="par">Apple MakeUp Online Training Class is an establishment dealing with <br>
+            <h1 class="h1-1">ABOUT <br><span> Founder & Apple </span> <br> MakeUp Class</h1>
+            <p class="par">Apple MakeUp Online Training Class is an establishment dealing with <br> 
                  cosmetic treatments for men and women.  <br> Other variations of this type of business include hair salons and spas. 
-                <br> dealing with hair styling treatments for men and women. <br>
-
-                Training နယ်ပယ်တွင် အတွေ့အကြုံ 19 နှစ်ရှိသည်။
-               
-                အသိအမှတ်ပြုလက်မှတ်များစွာဖြင့် <br> အတည်ပြုထားသော Training ကုမ္ပဏီ ဖြစ်သည်။
-               
-                ကျွန်ုပ်တို့၏ဖောက်သည်များအတွက် အထူး ဝန်ဆောင်မှု။
-                </p>
+                <br> dealing with hair styling treatments for men and women. </p>
 
                 <button class="cn"><a href="#">JOIN US</a></button>
 
@@ -336,51 +549,68 @@
 
 <!-- end nav -->
  <br><br><br>
- 
 
- <!-- <table border="1" cellspacing="" cellpadding="25"> -->
-
- <!-- Signature  -->
- <div class="signature-1">
-    <!-- <img src="images/cover.day.PNG" alt="" class="signature-img"> -->
-     <Video src="good video/smartmkup1.mp4" width="300" height="500" controls>
-
-        <source src="good video/soepyae.bridal.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
-        Your browser does not support the video tag.
-
-
-     </Video>
-
-     <!--
-     <video width="200" height="300" controls>
-        <source src="good video/soepyae.bridal.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
-        Your browser does not support the video tag.
-      </video>  
-      -->
-
-    <div class="signature-about">
-        <h2>Our Signature Looks</h2>
-        <p>
-            "မိန်းကလေးတိုင်း လှချင်ကြသလို မိတ်ကပ် လိမ်းတတ်ချင်ကြပါတယ်"
-        </p>
-        <a href="" class="order-button">JOIN US</a>
-
+ <nav>
+    <div class="container">
+      <div class="grid">
+        <div class="column-xs-12 column-md-8">
+          <p id="logo">ABOUT FOUNDER YYA & HER TRAINING CLASS</p>
+        </div>
+        <div class="column-xs-12 column-md-4">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-</div><hr>
+  </nav>
+  <main class="about">
+    <div class="container">
+      <section class="grid info">
+        <div class="column-xs-12 column-md-1">
+          <div class="about">
+          <h1 class="section-heading">About Me</h1>
+          </div>
+        </div>
+        <div class="column-xs-12 column-md-4">
+          <img src="images/yyalogoprepare.PNG" width="30px" height="30px">
+        </div>
+        <div class="column-xs-12 column-md-7">
+          <div class="intro">
+            <h2>About founder is an award-winning author and lifestyle blogger.</h2>
+            <p>Crud indignant permissively through burped nodded timorous onto the as wore less ouch far rewound considering so broken dachshund jeepers sanely confident. Contemplated growled apart enthusiastically punitively much much darn onto deep dear returned some cockatoo hungrily fortuitously enchantingly ouch sanely on unceremonious especially much yikes darn.</p>
+            <p>Gecko far one before ouch far indistinctly ouch much doubtfully the alas some classically far insincerely much honey close savage ground according enthusiastic and that then about realistic however more forlornly dear demonstrably a this.</p>
+            <p>Less urgently ape one some hamster much well that dolphin strode hey underneath so eagle ouch a hey turtle notwithstanding truly censoriously congratulated dear one mandrill weak much then disconsolately wholesome.</p>
+          </div>
+        </div>
+        <div class="column-xs-12 column-md-7">
+          <blockquote>
+            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa provident voluptatem consectetur illum, natus placeat incidunt tempora architecto aliquid recusandae eligendi repudiandae ex laborum neque quod cum id facere nulla.</h3>
+          </blockquote>
+        </div>
+        <div class="column-xs-12 column-md-5">
+          <img src="images/training.logo.PNG">
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <section class="grid">
+        <div class="column-xs-12">
+          <p class="copyright">&copy; Copyright 2024 Yi Yi Aye (UCSY)</p>
+        </div>
+      </section>
+    </div>
+  </footer>
 
 <!-- About Kyaw Cafe`  -->
- <hr>
   
 <div class="about">
-    <h2><i class="fa-solid fa-heart"></i> ABOUT <i class="fa-solid fa-heart"></i>  US <i class="fa-solid fa-heart"></i></h2>
+    <h2>ABOUT TRAINING CLASS</h2>
     <p>
-        Training နယ်ပယ်တွင် အတွေ့အကြုံ 19 နှစ်ရှိသည်။
-               
-        အသိအမှတ်ပြုလက်မှတ်များစွာဖြင့် <br> အတည်ပြုထားသော Training ကုမ္ပဏီ ဖြစ်သည်။
-       
-        ကျွန်ုပ်တို့၏ဖောက်သည်များအတွက် အထူး ဝန်ဆောင်မှု။ <br>
        Apple Online Makeup Class was established since 2011 
        ,by Daw Yi Yi Aye M.C.Sc (Thesis), MPA(Thesis).In the age, Time is Gold.So Online Makeup Class
         was established by me,in case we want to be our dear customers "Everything is save",Time save,Money save.We are mainly based on Trusts and Services.
@@ -389,36 +619,9 @@
     </p>
     <a href="readmore.html" class="order-button">Read More</a>
  </div>
- <hr>
  
  
-  <!-- Special Menu  -->
-<hr>
- <div class="special" >
-    <div class="special-about">
-        <h2><i class="fa-solid fa-heart"></i>OUR STUDENT TESTINOMIAL<i class="fa-solid fa-heart"></i></h2>
-        <p><h1>YOUR BEAUTY IS OUR JUTY</h1>
-        <p class="par">
-            Foundation မလိမ်းခင် အရင်ဆုံး Primer လိမ်းပါ။ 
-            Primer ဆိုတာ လိမ်းလိုက်တဲ့ မိတ်ကပ်သားကို ညီပြီးမွတ်နေအောင် 
-            စွမ်းဆောင်ပေးတဲ့အောက်ခံ မိတ်ကပ်တစ်မျိုးဖြစ်ပြီး မိတ်ကပ်မကွက်အောင်
-             ကူညီပေးနိုင်ပါတယ်။ 
-            
-
-        </p>
-        <a href="" class="order-button">JOIN US</a>
-    </div>
-    <div class="stu-testi">
-    <Video src="good video/stu-testi-toshow.mp4" width="300" height="500" controls>
-
-        <source src="good video/soepyae.bridal.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
-        Your browser does not support the video tag.
-
-
-     </Video>
-    </div>
-    
+  
 
 
     <!-- <img src="images/beautyisur1.PNG" alt="" class="special-img"> -->
@@ -428,69 +631,7 @@
 
 <!-- new arrival start -->
 
-<!-- New Arrival -->
-<div class="container">
-    <hr>
-    <h2>YOU MAY ALSO LIKE</h2> 
-    <hr><br>
-    <h3 class="par">မိတ်ကပ်ဆိုတာ အမျိုးသမီးတွေ နှစ်ခြိုက်တဲ့အရာတစ်ခုပါပဲ။ မိတ်ကပ်လိမ်းဖို့အတွက် 
-        အခြေခံမိတ်ကပ်လိမ်းနည်းမှသည် Advanced ၊ Master ၊ Pro စသည်ဖြင့် အဆင့်ဆင့်ကို မျှဝေပေးသွားပါမယ်</h3>
-    <br><hr>
-    <hr class="divied mt-0 pt-0">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
-        <div class="about  col mb-3">
-            <div class="card ">
-                <div class=" new-image-hover">
-                    
-                    <Video src="good video/smartmkup2.mp4" width="300" height="500" controls>
 
-                        <source src="good video/soepyae.bridal.mp4" type="video/mp4">
-                        <source src="movie.ogg" type="video/ogg">
-                        Your browser does not support the video tag.
-                       
-                
-                
-                     </Video>
-
-                     <Video src="good video/soepyae.bridal.mp4" width="300" height="500" controls>
-
-                        <source src="good video/soepyae.bridal.mp4" type="video/mp4">
-                        <source src="movie.ogg" type="video/ogg">
-                        Your browser does not support the video tag.
-                
-                
-                     </Video>
-
-                     <Video src="good video/graduation.mp4" width="300" height="500" controls>
-
-                        <source src="good video/graduation.mp4" type="video/mp4">
-                        <source src="movie.ogg" type="video/ogg">
-                        Your browser does not support the video tag.
-                
-                
-                     </Video>
-
-                     <Video src="good video/prooo5.mp4" width="300" height="500" controls>
-
-                        <source src="good video/stu-testi-toshow.mp4" type="video/mp4">
-                        <source src="movie.ogg" type="video/ogg">
-                        Your browser does not support the video tag.
-                
-                
-                     </Video>
-                    <!-- <img src="images/arrival.jpg" alt="" class="card-img-top new-image"> -->
-                    <div class="new-icon">
-                        <!-- <a href="product_detail.html" class="btn btn-sm btn-danger">Deatil <i class="fa-solid fa-eye"></i></a> -->
-                        <a href="" class="order-button">JOIN US</a>
-                    </div>
-                </div>
-                
-            </div> 
-        </div>
-        
-        </div>
-    </div>
-</div>
 
  
 
@@ -501,8 +642,7 @@
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 <!-- </table> -->
 
-
-
+<!-- footer start -->
 <!-- footer 2.yya -->
 
 <footer class="footer"> 
@@ -510,78 +650,74 @@
         
     
 
-  <!-- footer by apple beauty salon -->
-   <!-- footer -->
-    <hr>
-
-  <footer class="footerbar">
-
-    <div class="container pt-5 text-white">
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <h2>Apple <span class="color-orange">Makeup</span> Class</h2>
-          <hr class="divided">
-          <p class="service_text"> Training နယ်ပယ်တွင် <span class="color-orange">အတွေ့အကြုံ 19 နှစ်ရှိသည်။</span>
-               
-            အသိအမှတ်ပြုလက်မှတ်များစွာဖြင့် <br> <span class="color-orange">အတည်ပြုထားသော Training </span>ကုမ္ပဏီ ဖြစ်သည်။
-           
-            <span class="color-orange">ကျွန်ုပ်တို့၏ဖောက်သည်များအတွက်</span>  အထူး ဝန်ဆောင်မှု။ <br>
-          </p>
-          <p>
-            <img src="images/apple.png" alt="" class="img-fluid" style="width:120px">
-            <img src="images/google_logo.png" alt="" class="img-fluid" style="width:120px">
-           
-          </p>
+    <!-- footer by apple beauty salon -->
+     <!-- footer -->
+      <hr>
+  
+    <footer class="footerbar">
+  
+      <div class="container pt-5 text-white">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <h2>Apple <span class="color-orange">Makeup</span> Class</h2>
+            <hr class="divided">
+            <p class="service_text"> Training နယ်ပယ်တွင် <span class="color-orange">အတွေ့အကြုံ 19 နှစ်ရှိသည်။</span>
+                 
+              အသိအမှတ်ပြုလက်မှတ်များစွာဖြင့် <br> <span class="color-orange">အတည်ပြုထားသော Training </span>ကုမ္ပဏီ ဖြစ်သည်။
+             
+              <span class="color-orange">ကျွန်ုပ်တို့၏ဖောက်သည်များအတွက်</span>  အထူး ဝန်ဆောင်မှု။ <br>
+            </p>
+            <p>
+              <img src="images/apple.png" alt="" class="img-fluid" style="width:120px">
+              <img src="images/google_logo.png" alt="" class="img-fluid" style="width:120px">
+             
+            </p>
+          </div>
+          <div class="col-6 col-md-2">
+            
+                      
+            
+          </div>
+          <div class="col-6 col-md-2">
+            
+            
+            
+            
+            
+          </div>
+          
+            
+          
+         
+          <div class="col-12 col-md-4 mt-2">
+  
+  
+            <p> <i class="fa-solid fa-location-dot pe-2">__</i>KyaukpadaungTownship,Branch of Yangon </p>
+            <br>
+            <p> <i class="fa-solid fa-phone-volume pe-2">__</i>09-250050938/09-779951996 </p>
+            <br>
+            <p> <i class="fa-regular fa-envelope pe-2">__</i>apple.kpg@gmail.com </p>
+            <br>
+  
+            <p>
+              <a href="" class="text-white me-3"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+              <a href="" class="text-white me-3"><i class="fa-brands fa-youtube fa-2x"></i></a>
+              <a href="" class="text-white me-3"><i class="fa-brands fa-twitter fa-2x"></i></a>
+              <a href="" class="text-white me-3"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+            </p>
+          </div>
         </div>
-        <div class="col-6 col-md-2">
-          
-                    
-          
-        </div>
-        <div class="col-6 col-md-2">
-          
-          
-          
-          
-          
-        </div>
-        
-          
-        
-       
-        <div class="col-12 col-md-4 mt-2">
-
-
-          <p> <i class="fa-solid fa-location-dot pe-2">__</i>KyaukpadaungTownship,Branch of Yangon </p>
-          <br>
-          <p> <i class="fa-solid fa-phone-volume pe-2">__</i>09-250050938/09-779951996 </p>
-          <br>
-          <p> <i class="fa-regular fa-envelope pe-2">__</i>apple.kpg@gmail.com </p>
-          <br>
-
-          <p>
-            <a href="" class="text-white me-3"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
-            <a href="" class="text-white me-3"><i class="fa-brands fa-youtube fa-2x"></i></a>
-            <a href="" class="text-white me-3"><i class="fa-brands fa-twitter fa-2x"></i></a>
-            <a href="" class="text-white me-3"><i class="fa-brands fa-tiktok fa-2x"></i></a>
-          </p>
-        </div>
-      </div>
-      <!-- <footer class="footer"> -->
-
-<br>
-<hr>
-<p> 
-&copy;Copyright
-<span class="footer-title">Apple Makeup Class</span>
-All Right Reserved
-
-</p>
-<p>Design By <a href="" class="dev"> <i class="fa-solid fa-heart"> </i> YYA <i class="fa-solid fa-heart"> </i></a></p>
-</footer>
-
-
-
-
+        <!-- <footer class="footer"> -->
+  
+  <br>
+  <hr>
+  <p> 
+  &copy;Copyright
+  <span class="footer-title">Apple Makeup Class</span>
+  All Right Reserved
+  
+  </p>
+  <p>Design By <a href="" class="dev"> <i class="fa-solid fa-heart"> </i> YYA <i class="fa-solid fa-heart"> </i></a></p>
+  </footer>
 </body>
 </html>
